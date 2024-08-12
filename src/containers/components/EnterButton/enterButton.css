@@ -1,0 +1,8 @@
+.enter-button {
+    width: 106%;
+    padding: 0.9em;
+    border: 1px rgb(119, 119, 119);
+    border-radius: 7px;
+    color: gray;
+    border: none;
+}

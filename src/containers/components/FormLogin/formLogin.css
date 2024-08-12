@@ -1,0 +1,31 @@
+.form {
+    margin-bottom: 1em;
+    color: #445462;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 0em;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form input {
+    width: 100%;
+    padding: 0.9em;
+    border: 1px solid rgb(119, 119, 119);
+    border-radius: 7px;
+    margin-bottom: 25px;
+}
+
+a {
+    width: 106%;
+    display: block;
+    font-size: 14px;
+    text-align: right;
+    margin-top: -15px;
+    text-decoration: none;
+    color: #083C90;
+    margin-bottom: 40px;
+}

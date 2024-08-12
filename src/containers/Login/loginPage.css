@@ -18,3 +18,51 @@
     justify-content: center;
     background-color: white;
 }
+
+.title-left {
+    font-size: 50px;
+    color: white;
+    padding: 50px;
+    margin-bottom: 0px;
+    line-height: 1;
+}
+
+.p-left {
+    font-size: 20px;
+    color: white;
+    padding: 50px;
+    margin-top: -90px;
+    margin-right: 50px;
+    line-height: 1.5;
+}
+
+.p-right {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    line-height: 2;
+    font-size: 13px;
+    color: #445462;
+}
+
+h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 30px;
+    color: #445462;
+}
+
+.title-color {
+    color: #14346c;
+}
+
+.title-color-u {
+    color: rgb(255, 115, 0);
+}
+
+.header-login {
+    margin-top: 400px;
+    margin-bottom: 500px;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+}
