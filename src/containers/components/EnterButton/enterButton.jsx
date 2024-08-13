@@ -1,10 +1,10 @@
 import React from "react";
 import "../EnterButton/enterButton.css"
 
-function EnterButton() {
+const EnterButton = (props) => {
     return (
         <div>
-            <button className="enter-button"><strong>Entrar</strong></button>
+            <button className="enter-button" disabled={props.disabled}><strong>{props.children}</strong></button>
         </div>
     )
 }

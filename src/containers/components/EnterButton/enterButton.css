@@ -6,3 +6,13 @@
     color: gray;
     border: none;
 }
+
+.enter-button:disabled {
+    background-color: rgb(214, 214, 214);
+}
+
+.enter-button:enabled {
+    background-color: #14346c;
+    color: white;
+    cursor: pointer;
+}
