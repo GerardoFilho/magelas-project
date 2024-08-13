@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "../Login/loginPage.css"
-import logo from "../../assets/logo.png"
-import FormLogin from "../components/FormLogin/FormLogin";
-import EnterButton from "../components/EnterButton/EnterButton";
+import "./loginPage.css"
+import logo from "../../../../src/assets/logo.png"
+import FormLogin from "../../components/FormLogin/FormLogin";
+import EnterButton from "../../components/EnterButton/EnterButton";
 
 function Login() {
 
