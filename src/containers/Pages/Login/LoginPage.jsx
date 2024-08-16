@@ -44,7 +44,7 @@ function Login() {
                         </p>
                     </div>
                     <FormLogin handleEmailChange={(e) => handleEmailChange(e)} email={email} handlePasswordChange={(e) => handlePasswordChange(e)} password={password}/>
-                    <EnterButton disabled={!(email.length != 0 && password.length != 0)}>Entrar</EnterButton>
+                    <EnterButton className="enter-button" disabled={!(email.length != 0 && password.length != 0)}>Entrar</EnterButton>
                 </div>
             </div>
         </div>

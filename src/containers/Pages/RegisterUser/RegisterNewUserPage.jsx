@@ -5,7 +5,7 @@ import FormRegister from "../../components/FormRegister/FormRegister";
 const RegisterNewUSer = () => {
     return (
         <>
-            <div className="container-newUser">
+            <div className="container-new-user">
                 <div className="modal-area">
                     <div className="content-modal" > {/* Posso criar varios nomes de classes para a mesma classe pra fins de organizacao */}
                         <h1>Novo por aqui? Crie sua conta.</h1>

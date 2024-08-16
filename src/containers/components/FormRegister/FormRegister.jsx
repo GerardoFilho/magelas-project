@@ -20,7 +20,7 @@ const FormRegister = () => {
     return (
     <>
         <form action="" className="form-default" onSubmit={handleSubmit(onSubmit)}>
-            <div className="form-input-1 linha1">
+            <div className="form-input-class">
                 <Input
                     className={errors.firstName ? "error" : ""} //Se encontrou erro na validação atribui .error a classe input, se nao, permanece
                     label="Nome:" 
@@ -53,31 +53,38 @@ const FormRegister = () => {
                     })}}
                 />
             </div>
-            <div className="form-input-2 linha2">
-                <Input 
-                    className={errors.password ? "error" : ""}
-                    label="Senha:" 
-                    type="password" 
-                    name="password" 
-                    placeholder={errors.password ? errors.password.message : "Digite sua senha"} 
-                    register={{...register('password', {required: "A senha é obrigatória!",
-                        minLength: {
-                            value: 8,
-                            message: "Aviso: A senha deve conter no mínimo 8 caracteres!"
-                        }
-                    })}}
-                />
 
-                <Input 
-                    className={errors.confirmPassword ? "error" : ""}
-                    label={"Confirmar senha:"} 
-                    type="password" 
-                    name="confirmPassword" 
-                    placeholder={errors.confirmPassword ? errors.confirmPassword.message : "Digite sua senha"} 
-                    register={{...register('confirmPassword', {required: "Confirmação de senha é obrigatório!",
-                        validate: (value, {password}) => value === password || "Aviso: As senhas não coincidem!"
-                    })}}
-                />
+            <div className="form-input-class">
+                <div className="input-password">
+                    <Input
+                        className={errors.password ? "error" : ""}
+                        label="Senha:" 
+                        type="password" 
+                        name="password" 
+                        placeholder={errors.password ? errors.password.message : "Digite sua senha"} 
+                        register={{...register('password', {required: "A senha é obrigatória!",
+                            minLength: {
+                                value: 8,
+                                message: "Aviso: A senha deve conter no mínimo 8 caracteres!"
+                            }
+                        })}}
+                    />
+                    {errors.password && <span>{errors.password.message}</span>}
+                </div>
+
+                <div className="input-confirm-password">
+                    <Input 
+                        className={errors.confirmPassword ? "error" : ""}
+                        label={"Confirmar senha:"} 
+                        type="password" 
+                        name="confirmPassword" 
+                        placeholder={errors.confirmPassword ? errors.confirmPassword.message : "Digite sua senha"} 
+                        register={{...register('confirmPassword', {required: "Confirmação de senha é obrigatório!",
+                            validate: (value, {password}) => value === password || "Aviso: As senhas não coincidem!"
+                        })}}
+                    />
+                    {errors.confirmPassword && <span>{errors.confirmPassword.message}</span>}
+                </div>
 
                 <Input 
                     className={errors.birthDate ? "error" : ""}
@@ -87,13 +94,9 @@ const FormRegister = () => {
                     register={{...register('bithDate', {required: "O campo de data de nascimento é obrigatório"
                     })}}
                 />
+                {errors.birthDate && <span>{errors.birthDate.message}</span>}
             </div>
-            <div className="content-errors">
-                {errors.birthDate && <p>{errors.birthDate.message}</p>}
-                {errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}
-                {errors.password && <p>{errors.password.message}</p>}
-            </div>
-            <EnterButton className="linha3" type="submit">Enviar</ EnterButton>
+            <EnterButton className="enter-button" type="submit">Enviar</ EnterButton>
         </form>
     </>
     )

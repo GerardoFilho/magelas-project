@@ -1,4 +1,4 @@
-.container-newUser {
+.container-new-user {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,12 +8,12 @@
 }
 
 .modal-area {
-    width: 50%;
-    height: 80vh;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     margin: 0 auto;
     position: fixed;
-    top: 100px;
+    top: 150px;
     border: 1px solid transparent;
     box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.3);
     overflow: auto;
@@ -25,17 +25,9 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 0;
     padding: 70px;
     font-family: "Nunito";
-}
-
-.content-modal h1 {
-    justify-content: center;
-    color: #3d4f58;
-    font-size: 40px;
-    display: block;
-    margin-bottom: 0;
 }
 
 .description {
@@ -43,78 +35,3 @@
     display: block;
     margin-bottom: 50px;
 }
-
-.content-modal form {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "linha1 linha1 linha1"
-                        "linha2 linha2 linha2"
-                        "linha3 linha3 linha3";
-    width: 100%;
-    gap: 30px;
-    margin-top: 30px;
-    justify-items: start;
-}
-
-.linha1 {
-    grid-area: linha1;
-}
-
-.linha2 {
-    grid-area: linha2;
-}
-
-.linha3 {
-    grid-area: linha3;
-}
-
-.form-input-1 input, .form-input-2 input {
-    padding: 0.5em;
-    width: 100%;
-    max-width: 200px;
-    height: 20px;
-    font-family: "Nunito";
-    margin-bottom: 10px;
-
-}
-
-.content-modal input.error::placeholder {
-    color: red;
-}
-
-.content-modal input.error {
-    border-color: red;
-}
-
-.content-modal .content-errors{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-.content-modal button {
-    margin-top: 20px;
-    width: 50%;
-}
-
-.content-modal .form-default p {
-    color: red;
-}
-
-.form-input-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 24px;
-}
-
-.form-input-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 24px;
-}
-

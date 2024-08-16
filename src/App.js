@@ -5,9 +5,9 @@ import RegisterNewUSer from "./containers/Pages/RegisterUser/RegisterNewUserPage
 
 function App() {
   return (
-    <RegisterNewUSer />
+    //<RegisterNewUSer />
     //<RegisterPage />
-    //<Login />
+    <Login />
   );
 }
 
