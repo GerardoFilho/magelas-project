@@ -4,28 +4,34 @@
 }
 
 .form label {
-    display: block;
     margin-bottom: 0.2em;
     font-size: 14px;
     font-weight: bold;
     text-align: left;
+    padding-left: 12px;
 }
 
 .form input {
     width: 100%;
+    max-width: 315px;
     padding: 0.9em;
     border: 1px solid rgb(119, 119, 119);
     border-radius: 7px;
     margin-bottom: 25px;
 }
 
-a {
-    width: 106%;
-    display: block;
+.forgot-password {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     font-size: 14px;
-    text-align: right;
     margin-top: -15px;
+    margin-bottom: 40px;
+}
+
+.forgot-password a {
     text-decoration: none;
     color: #083C90;
-    margin-bottom: 40px;
+    padding-right: 12px;
+    font-weight: bold;
 }

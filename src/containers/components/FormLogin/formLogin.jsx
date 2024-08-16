@@ -1,6 +1,6 @@
 import React from "react";
 import "../FormLogin/formLogin.css"
-import Input from "../Input/Input";
+import Input from "../Utils/Input/Input";
 
 function FormLogin(props) {
     return (
@@ -22,7 +22,9 @@ function FormLogin(props) {
                 handlePasswordChange={props.handlePasswordChange}
                 password={props.password}
             />
-            <a href="#"><strong>Esqueceu sua senha?</strong></a>
+            <div className="forgot-password">
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
         </div>
     )
 }

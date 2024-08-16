@@ -3,9 +3,7 @@ import "../EnterButton/enterButton.css"
 
 const EnterButton = (props) => {
     return (
-        <div>
-            <button className="enter-button" disabled={props.disabled}><strong>{props.children}</strong></button>
-        </div>
+            <button className="enter-button" type={props.type} disabled={props.disabled}><strong>{props.children}</strong></button>
     )
 }
 

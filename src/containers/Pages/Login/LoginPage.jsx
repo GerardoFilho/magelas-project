@@ -15,14 +15,14 @@ function Login() {
         console.log('Valor atual do input:', novoValor);
     };
 
-    const handlePasswordChange = (event) => { //Essa funcao faz o mesmo do e-mail, porem com o campo senh
+    const handlePasswordChange = (event) => {
         const novoValor = event?.target?.value;
         setPassword(novoValor);
     }
 
     return (
         <>
-        <div className="container">
+        <div className="container-login">
             <div className="left-side">
                 <p>
                     <strong>
@@ -36,13 +36,15 @@ function Login() {
 
             <div className="right-side">
                 <div className="header-login">
-                    <img src={logo} alt="Logo Casulo" />
-                    <h2>Seja bem-vindo ao <span className="title-color">Cas<span className="title-color-u">u</span>lo</span></h2>
-                    <p className="p-right">
-                        <strong>Faça login</strong> para acessar sua conta.
-                    </p>
-                <FormLogin handleEmailChange={(e) => handleEmailChange(e)} email={email} handlePasswordChange={(e) => handlePasswordChange(e)} password={password}/>
-                <EnterButton disabled={email.length === 0 || password.length === 0}>Entrar</EnterButton>
+                    <div>
+                        <img src={logo} alt="Logo Casulo" />
+                        <h2 className="title-login">Seja bem-vindo ao <span className="title-color">Cas<span className="title-color-u">u</span>lo</span></h2>
+                        <p className="p-right">
+                            <strong>Faça login</strong> para acessar sua conta.
+                        </p>
+                    </div>
+                    <FormLogin handleEmailChange={(e) => handleEmailChange(e)} email={email} handlePasswordChange={(e) => handlePasswordChange(e)} password={password}/>
+                    <EnterButton disabled={!(email.length != 0 && password.length != 0)}>Entrar</EnterButton>
                 </div>
             </div>
         </div>
